@@ -23,6 +23,7 @@ The game includes the mods from the default [minetest_game](https://github.com/m
 * [awards][] ([MIT][lic.awards]) -- version: [3.3.0][ver.awards] *2018-09-14* ***UNSTABLE UPDATES***
 * [antum][] ([MIT][lic.antum]) -- version: [69b39a4 Git][ver.antum] *2017-08-30*
 * buildings/
+    * barn (from mobf_core modpack)
     * [bridges][] ([GPL][lic.gpl3.0]) -- version: [5b5f475 Git][ver.bridges] *2015-08-23* ([patched][patch.bridges])
     * [christmas][] ([MIT][lic.christmas]) -- version [d3bd872 Git][ver.christmas] *2013-01-11* ([patched][patch.christmas])
     * [elevator][] ([WTFPL][lic.elevator])
