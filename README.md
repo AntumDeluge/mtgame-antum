@@ -111,6 +111,7 @@ The game includes the mods from the default [minetest_game](https://github.com/m
     * [workbench][] ([LGPL / WTFPL](mods/tools/workbench/LICENSE)) -- version: [bd14f59 Git][ver.workbench] *2017-08-08*
 * transport/
 	* [boats][boats2] ([LGPL][lic.lgpl3.0] / [CC BY-SA][lic.ccbysa3.0]) -- version [b83231e Git][ver.boats2] *2016-10-14* ([patched][patch.boats2])
+	* [hangglider][] ([GPL / LGPL / CC BY SA][lic.hangglider]) -- version: [3775851 Git][ver.hangglider] 2019-03-05
 	* [helicopter][] ([GPL][lic.gpl2.0]) -- version: [10f1433 Git][ver.helicopter] *2014-03-28* ([patched][ver.helicopter_pm]) ***UPSTREAM UPDATES***
     * [hovercraft][] ([LGPL / CC BY-SA / CC0][lic.hovercraft]) -- version: [4d50e68 Git][ver.hovercraft] *2017-05-14* ([patched][patch.hovercraft])
 * ui/
@@ -226,6 +227,7 @@ The game includes the mods from the default [minetest_game](https://github.com/m
 [gems_tools]: https://forum.minetest.net/viewtopic.php?t=4294
 [glass]: https://forum.minetest.net/viewtopic.php?t=18307
 [glow]: https://forum.minetest.net/viewtopic.php?t=6300
+[hangglider]: https://forum.minetest.net/viewtopic.php?t=21425
 [hbarmor]: https://forum.minetest.net/viewtopic.php?t=11337
 [hbsprint]: https://forum.minetest.net/viewtopic.php?t=18069
 [helicopter]: https://forum.minetest.net/viewtopic.php?t=6183
@@ -326,6 +328,7 @@ The game includes the mods from the default [minetest_game](https://github.com/m
 [lic.ethereal]: mods/world/ethereal/license.txt
 [lic.farming_plus]: mods/farming/farming_plus/README.txt
 [lic.fort_spikes]: mods/buildings/fort_spikes/LICENSE
+[lic.hangglider]: mods/transport/hangglider/LICENSE.txt
 [lic.home_gui]: mods/ui/home_gui/LICENSE
 [lic.hill_nodebox]: mods/world/hill_nodebox/LICENSE
 [lic.homedecor]: mods/modpacks/homedecor/LICENSE
@@ -428,6 +431,7 @@ The game includes the mods from the default [minetest_game](https://github.com/m
 [ver.gems_tools]: https://github.com/captainLAD/gems/tree/b375432
 [ver.glass]: https://github.com/AntumMT/mod-glass/tree/d61a6c6
 [ver.glow]: https://github.com/bdjnk/glow/tree/c611ae0
+[ver.hangglider]: https://notabug.org/Piezo_/minetest-hangglider/src/4aa7f85fa04649438547d64df426f414a09dd082
 [ver.hbarmor]: http://repo.or.cz/minetest_hbarmor.git/tree/e513aeb
 [ver.hbsprint]: https://github.com/tacotexmex/hbsprint/tree/de3e77e
 [ver.helicopter]: https://github.com/SokolovPavel/helicopter/tree/10f1433
