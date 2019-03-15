@@ -2950,6 +2950,10 @@ enable_single_night_skip = true
 # **** bones
 
 ## Manages how item loss is handled when a player dies.
+#  Options:
+#       bones: Store items in a bone node but drop items if inside protected area.
+#       drop: Drop items on the ground.
+#       keep: Player keeps items.
 #    type:    enum
 #    values:  bones, drop, keep
 #    default: bones
@@ -2967,6 +2971,11 @@ share_bones_time = 1200
 #    type: string
 #    default: share_bones_time / 4
 share_bones_time_early = share_bones_time / 4
+
+## Inform player of condition and location of new bones.
+#    type: bool
+#    default: false
+#bones_position_message = false
 
 
 # **** creative
@@ -3022,9 +3031,18 @@ give_initial_stuff = true
 initial_stuff = default:sword_stone,default:pick_steel,default:apple 10
 
 
+# **** spawn
+
+## Whether the engine's spawn search, which does not check for a suitable
+#  starting biome, is used.
+#    type:    bool
+#    default: false
+#engine_spawn = false
+
+
 # **** stairs
 
-# Replaces old stairs with new ones (Only required for older worlds).
+## Replaces old stairs with new ones (Only required for older worlds).
 #    type:    bool
 #    default: false
 #enable_stairs_replace_abm = false

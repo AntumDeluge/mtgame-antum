@@ -788,6 +788,9 @@ share_bones_time (Bones share time) int 1200 0
 # 0 to disable. Default is "share_bones_time" divide by four (300).
 share_bones_time_early (Bones early share time) int 300 0
 
+# Inform player of condition and location of new bones.
+bones_position_message (Inform player about bones) bool false
+
 [**creative]
 
 # In creative mode players are able to dig all kind of blocks nearly
@@ -828,6 +831,12 @@ give_initial_stuff (Give initial items) bool false
 #
 # Comma-separated list: item1,item2 10,item3
 initial_stuff (Initial items) string default:sword_stone,default:pick_steel,default:apple 10
+
+[**spawn]
+
+# If enabled, use the engine's spawn search which does not check for a
+# suitable starting biome.
+engine_spawn (Use engine spawn search) bool false
 
 [**stairs]
 
