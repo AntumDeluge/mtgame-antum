@@ -2424,11 +2424,6 @@ bedrock2_y = -28000
 #biome_lib_queue_run_ratio = 100
 
 
-# *** ethereal ***
-
-ethereal.use_animalmaterials = true
-
-
 # *** worldedge ***
 
 ## Limit the size of the world causing players to "circle around" (teleport)

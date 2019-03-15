@@ -98,11 +98,18 @@ stairs.register_all("redwood_wood", "ethereal:redwood_wood",
 	S("Redwood Slab"),
 	default.node_sound_wood_defaults())
 
-stairs.register_all("bamboo_wood", "ethereal:bamboo_floor",
+stairs.register_all("bamboo_wood", "ethereal:bamboo_block",
 	{snappy = 3, choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
 	{"bamboo_floor.png"},
 	S("Bamboo stair"),
 	S("Bamboo Slab"),
+	default.node_sound_wood_defaults())
+
+stairs.register_all("sakura_wood", "ethereal:sakura_wood",
+	{choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
+	{"ethereal_sakura_wood.png"},
+	S("Sakura Wood stair"),
+	S("Sakura Wood Slab"),
 	default.node_sound_wood_defaults())
 
 -- Stairs Plus (in More Blocks)
@@ -202,10 +209,17 @@ stairsplus:register_all("ethereal", "redwood_wood", "ethereal:redwood_wood", {
 	sounds = default.node_sound_wood_defaults(),
 })
 
-stairsplus:register_all("ethereal", "bamboo_wood", "ethereal:bamboo_floor", {
+stairsplus:register_all("ethereal", "bamboo_wood", "ethereal:bamboo_block", {
 	description = S("Bamboo"),
 	tiles = {"bamboo_floor.png"},
 	groups = {snappy = 3, choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
+	sounds = default.node_sound_wood_defaults(),
+})
+
+stairsplus:register_all("ethereal", "sakura_wood", "ethereal:sakura_wood", {
+	description = S("Sakura"),
+	tiles = {"ethereal_sakura_wood.png"},
+	groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
 	sounds = default.node_sound_wood_defaults(),
 })
 
@@ -307,11 +321,18 @@ stairs.register_stair_and_slab("redwood_wood", "ethereal:redwood_wood",
 	S("Redwood Slab"),
 	default.node_sound_wood_defaults())
 
-stairs.register_stair_and_slab("bamboo_wood", "ethereal:bamboo_floor",
+stairs.register_stair_and_slab("bamboo_wood", "ethereal:bamboo_block",
 	{snappy = 3, choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
 	{"bamboo_floor.png"},
 	S("Bamboo stair"),
 	S("Bamboo Slab"),
+	default.node_sound_wood_defaults())
+
+stairs.register_stair_and_slab("sakura_wood", "ethereal:sakura_wood",
+	{choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
+	{"ethereal_sakura_wood.png"},
+	S("Sakura Wood Stair"),
+	S("Sakura Wood Slab"),
 	default.node_sound_wood_defaults())
 
 end

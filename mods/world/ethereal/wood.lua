@@ -1,6 +1,34 @@
 
 local S = ethereal.intllib
 
+-- sakura trunk
+minetest.register_node("ethereal:sakura_trunk", {
+	description = S("Sakura Trunk"),
+	tiles = {
+		"ethereal_sakura_trunk_top.png",
+		"ethereal_sakura_trunk_top.png",
+		"ethereal_sakura_trunk.png"
+	},
+	groups = {tree = 1, choppy = 2, oddly_breakable_by_hand = 1, flammable = 2},
+	sounds = default.node_sound_wood_defaults(),
+	paramtype2 = "facedir",
+	on_place = minetest.rotate_node,
+})
+
+-- sakura wood
+minetest.register_node("ethereal:sakura_wood", {
+	description = S("Sakura Wood"),
+	tiles = {"ethereal_sakura_wood.png"},
+	is_ground_content = false,
+	groups = {wood = 1, choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
+	sounds = default.node_sound_wood_defaults(),
+})
+
+minetest.register_craft({
+	output = "ethereal:sakura_wood 4",
+	recipe = {{"ethereal:sakura_trunk"}}
+})
+
 -- willow trunk
 minetest.register_node("ethereal:willow_trunk", {
 	description = S("Willow Trunk"),
@@ -248,7 +276,7 @@ minetest.register_node("ethereal:bamboo", {
 		type = "fixed",
 		fixed = {-0.3, -0.5, -0.3, 0.3, 0.5, 0.3}
 	},
-	groups = {choppy = 3, oddly_breakable_by_hand = 1, flammable = 2, tree = 1},
+	groups = {choppy = 3, oddly_breakable_by_hand = 1, flammable = 2},--tree = 1
 	sounds = default.node_sound_leaves_defaults(),
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)

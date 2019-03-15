@@ -144,7 +144,13 @@ minetest.register_node("ethereal:golden_apple", {
 		leafdecay = 3,leafdecay_drop = 1
 	},
 	drop = "ethereal:golden_apple",
-	on_use = minetest.item_eat(20),
+--	on_use = minetest.item_eat(20),
+	on_use = function(itemstack, user, pointed_thing)
+		if user then
+			user:set_hp(20)
+			return minetest.do_item_eat(2, nil, itemstack, user, pointed_thing)
+		end
+	end,
 	sounds = default.node_sound_leaves_defaults(),
 	after_place_node = function(pos, placer, itemstack)
 		if placer:is_player() then
@@ -197,3 +203,30 @@ minetest.register_craft({
 		{"bucket:bucket_empty","default:cactus"},
 	}
 })
+
+
+-- firethorn jelly
+minetest.register_craftitem("ethereal:firethorn_jelly", {
+	description = S("Firethorn Jelly"),
+	inventory_image = "ethereal_firethorn_jelly.png",
+	wield_image = "ethereal_firethorn_jelly.png",
+	on_use = minetest.item_eat(2, "vessels:glass_bottle"),
+	groups = {vessel = 1},
+})
+
+if minetest.registered_items["farming:bowl"] then
+
+minetest.register_craft({
+	type = "shapeless",
+	output = "ethereal:firethorn_jelly",
+	recipe = {
+		"farming:mortar_pestle","vessels:glass_bottle",
+		"ethereal:firethorn", "ethereal:firethorn", "ethereal:firethorn",
+		"bucket:bucket_water", "bucket:bucket_water", "bucket:bucket_water",
+	},
+	replacements = {
+		{"bucket:bucket_water", "bucket:bucket_empty 3"},
+		{"farming:mortar_pestle", "farming:mortar_pestle"},
+	},
+})
+end
