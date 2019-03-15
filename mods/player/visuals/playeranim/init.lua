@@ -9,7 +9,11 @@ local BONE_POSITION, BONE_ROTATION = (function()
 	return dofile(modpath .. "/model.lua")
 end)()
 
-local get_animation = player_api and player_api.get_animation or default.player_get_animation
+local get_animation
+if minetest.global_exists("player_api") then
+	get_animation = player_api and player_api.get_animation
+end
+get_animation = get_animation or default.player_get_animation
 if not get_animation then
 	error("player_api.get_animation or default.player_get_animation is not found")
 end

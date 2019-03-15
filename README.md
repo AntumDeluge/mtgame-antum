@@ -533,7 +533,7 @@ The game includes the mods from the default [minetest_game](https://github.com/m
 [patch.mypaint]: https://github.com/AntumMT/mod-mypaint/tree/10a5359
 [patch.mysheetmetal]: https://github.com/AntumMT/mod-mysheetmetal/tree/b7d644b
 [patch.nether]: https://github.com/AntumMT/mod-nether/tree/d4e5a2a
-[patch.playeranim]: https://github.com/AntumMT/mod-playeranim/tree/2540530
+[patch.playeranim]: https://github.com/AntumMT/mod-playeranim/tree/bf3f7de
 [patch.pvp_areas]: https://github.com/AntumMT/mod-pvp_areas/tree/7f2f5b2
 [patch.quartz]: https://github.com/AntumMT/mod-quartz/tree/c6813dc
 [patch.rainbow_ore]: https://github.com/AntumMT/mod-rainbow_ore/tree/0227a86
