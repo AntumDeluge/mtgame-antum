@@ -1,11 +1,11 @@
 --[[
 More Blocks: ownership handling
 
-Copyright (c) 2011-2017 Hugo Locurcio and contributors.
+Copyright © 2011-2019 Hugo Locurcio and contributors.
 Licensed under the zlib license. See LICENSE.md for more information.
 --]]
 
-local S = moreblocks.gettext
+local S = moreblocks.S
 
 function moreblocks.node_is_owned(pos, placer)
 	local ownername = false
